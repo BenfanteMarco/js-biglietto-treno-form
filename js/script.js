@@ -1,6 +1,5 @@
 
 const button = document.querySelector('#button');
-let scount = document.getElementById('subtitle').innerText;
 
 button.addEventListener('click', function(){
     
@@ -15,15 +14,13 @@ button.addEventListener('click', function(){
 
     if(eta.value < 18){
         price -= (price * 20) / 100;
-        scount = 'hai diritto ad uno sconto del 20%'
     } else if(eta.value > 65){
         price -= (price * 40) / 100;
-        scount = 'hai diritto ad uno sconto del 40%'
     }
 
     console.log(price);
 
-    document.getElementById('welcome').innerHTML = price.toFixed(2);
-    document.getElementById('subtitle').innerText = 'Enjoy your ticket and your trip! ' + scount;
+    document.getElementById('welcome').innerHTML = price.toFixed(2) + ' $';
+    document.getElementById('subtitle').innerText = 'Enjoy your ticket and your trip!';
 
 })
