@@ -1,5 +1,6 @@
 
 const button = document.querySelector('#button');
+let scount = document.getElementById('subtitle').innerText;
 
 button.addEventListener('click', function(){
     
@@ -11,7 +12,6 @@ button.addEventListener('click', function(){
     console.log(name, surname, km, eta);
 
     let price = km.value * 0.21;
-    let scount = 'prezzo standard'
 
     if(eta.value < 18){
         price -= (price * 20) / 100;
@@ -24,6 +24,6 @@ button.addEventListener('click', function(){
     console.log(price);
 
     document.getElementById('welcome').innerHTML = price.toFixed(2);
-    document.getElementById('subtitle').innerHTML += scount;
+    document.getElementById('subtitle').innerText = 'Enjoy your ticket and your trip! ' + scount;
 
 })
