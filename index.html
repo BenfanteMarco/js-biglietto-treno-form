@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -22,43 +25,45 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>EL TAXI</h1>
+    <main>
+        <div class="container w-50 general-content">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h1>EL TAXI</h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="form-control">
+            <div class="row">
+                <div class="col-6 mb-2">
+                    <label for="name" class="d-flex justify-content-center">Name</label>
+                    <input type="text" id="name" name="name" class="form-control">
+                </div>
+                <div class="col-6 mb-2">
+                    <label for="surname" class="d-flex justify-content-center">Surname</label>
+                    <input type="text" id="surname" name="surname" class="form-control">
+                </div>
             </div>
-            <div class="col-6">
-                <label for="surname">Surname</label>
-                <input type="text" id="surname" name="surname" class="form-control">
+            <div class="row">
+                <div class="col-6">
+                    <label for="kilometer" class="d-flex justify-content-center">Km</label>
+                    <input type="number" id="kilometer" name="kilometer" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label for="eta" class="d-flex justify-content-center">Età</label>
+                    <input type="number" id="eta" name="eta" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <label for="kilometer">Km</label>
-                <input type="number" id="kilometer" name="kilometer" class="form-control">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center mt-5">
+                    <button id="button" class="btn">BUY YOUR TICKET</button>
+                </div>
             </div>
-            <div class="col-6">
-                <label for="eta">Età</label>
-                <input type="number" id="eta" name="eta" class="form-control">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <h2 id="welcome" class="d-flex justify-content-center"></h2>
+                    <h5 id="subtitle" class="d-flex justify-content-center"></h5>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <button id="button" class="btn">BUY YOUR TICKET</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h2 id="welcome"></h2>
-                <h5 id="subtitle">Enjoy your ticket and your trip! </h5>
-            </div>
-        </div>
+    </main>
     </div>
 
     <!-- JAVASCRIPT -->
